@@ -1,131 +1,165 @@
-<!DOCTYPE html> 
-<html> 
-<head> 
-    <title>horror movies</title> 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600|Work+Sans:400,500&display=swap" rel="stylesheet"> 
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>horror movies</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600|Work+Sans:400,500&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script>
-    var i=0;/*current page*/ 
-var j=5;/*total pages*/ 
- 
-$(document).ready(function(){ 
-    $(".button-next").click(function(){ 
-        $(".page-"+(i+1)).hide(); 
-        i = (j + i + 1) % j; 
-        $(".page-"+(i+1)).show(); 
-    }); 
-    $(".button-prev").click(function(){ 
-        $(".page-"+(i+1)).hide(); 
-        i = (j + i - 1) % j; 
-        $(".page-"+(i+1)).show(); 
-    }); 
-});
+        var i = 0;/*current page*/
+        var j = 5;/*total pages*/
 
-function myFunction() { document.getElementById("myDropdown").classList.toggle("show");
-}
+        $(document).ready(function () {
+            $(".button-next").click(function () {
+                $(".page-" + (i + 1)).hide();
+                i = (j + i + 1) % j;
+                $(".page-" + (i + 1)).show();
+            });
+            $(".button-prev").click(function () {
+                $(".page-" + (i + 1)).hide();
+                i = (j + i - 1) % j;
+                $(".page-" + (i + 1)).show();
+            });
+        });
 
-window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
-  }
-}
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        window.onclick = function (event) {
+            if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
     </script>
+</head>
 
-</head> 
-<body> 
-    <!--Heading--> 
-    <h1 class="heading-primary"> HORROR MOVIES<br> 
-<span> enjoy being hunted</span></h1> 
-<hr>
-         <div class="dropdown">
-  <button onclick="myFunction()" class="dropbtn">≡ </button>
-  <div id="myDropdown" class="dropdown-content">
-   <a href="#t1">The invisible men</a>
-    <a href="#t2">Conjuring 3</a>
-    <a href="#t3">47 Meters down</a>
-    <a href="#t4">It...</a>
-    <a href="#t5">Happy deathday</a>
-  </div>
-</div>
-<hr>
-    <!--Pages--> 
- 
-    <!--Page 1--> 
-    <div class="page page-1"> 
-         <h2 id="t1" class="heading-secondary"> 
-             ⫸ The invisible men</a> 
-         </h2> 
-       <img src="https://raw.githubusercontent.com/Mohammed-Benotmane/gift-from-my-wife/master/hor5.jpg?token=AJO35IG5GLFH33V3VBW2ACK6XS5QE"/> 
-  
-         <p> Cecilia Kass is in a relationship with a brilliant and rich scientist. No longer tolerating her violent and tyrannical behavior, she fled one night and took refuge with her sister, their childhood friend and her teenage daughter. But when the man commits suicide by leaving Cecilia a large part of his immense fortune, she begins to wonder if he is really dead ...</p> 
- <a class="trailer" href="https://youtu.be/WO_FJdiY9dA" target="_blank">Movie's trailer</a>
-           </div> 
-           
-    <!--Page 2--> 
-    <div class="page page-2"> 
-         <h2 id="t2" class="heading-secondary"> 
-             ⫸ Conjuring 3</a> 
-         </h2> 
-     <img src="https://raw.githubusercontent.com/Mohammed-Benotmane/gift-from-my-wife/master/hor4.jpg?token=AJO35IBUEZOMIQCPCZGNVW26XS5QC"/> 
-         <p> A terrifying case of murder and a mysterious evil presence shakes even the paranormal investigators Ed and Lorraine Warren, however very seasoned. In this case from their secret files, Ed and Lorrain start by fighting to protect the soul of a little boy, then switch to a radically unknown world. It is the first time in the history of the United States that a man suspected of murder has pleaded demonic possession as a line of defense.
-         </p> 
- <a class="trailer" href="https://youtu.be/eKYmp4FGy70" target="_blank">Movie's trailer</a>
-    </div> 
-    
-    <!--Page 3--> 
-    <div class="page page-3"> 
-        <h2 id="t3" class="heading-secondary"> 
-        ⫸ 47 meters down </a> 
-        </h2> 
-       <img src="https://raw.githubusercontent.com/Mohammed-Benotmane/gift-from-my-wife/master/hor3.jpg?token=AJO35IHWM6FJDLQPA55RZA26XS5QC"/>  
-        <p>A group of girls decides to go swimming near underwater ruins off the coast of Brazil. While they are amazed by the beauty of the underwater landscape, the adventure quickly turns into a nightmare. Indeed, they discover that they are not alone in these caves. At the bottom of the ocean, they will have to face the deadliest species of sharks on the planet.</p> 
- <a class="trailer" href="https://youtu.be/AvXjx8SZbv8" target="_blank">Movie's trailer</a>
-    </div> 
-    
-    <!--Page 4--> 
-    <div class="page page-4"> 
-        <h2 id="t4"class="heading-secondary"> 
-        ⫸ It ...</a> 
-         </h2> 
-    <img src="https://raw.githubusercontent.com/Mohammed-Benotmane/gift-from-my-wife/master/hor1.jpg?token=AJO35IABEYUBUCVBXHUPQR26XS5P2"/>
-         <p>Every 27 years, an evil creature returns to haunt the streets of Derry, Maine. Almost thirty years after the events of the first installment, the members of the Failed Club, now adults, meet again.
-         </p> 
- <a class="trailer" href="https://youtu.be/zqUopiAYdRg" target="_blank">Movie's trailer</a>
-    </div> 
-    
-    <!--Page 5--> 
-    <div class="page page-5"> 
-        <h2 id="t5" class="heading-secondary">  
-        ⫸ Happy deathday</a> 
+<body>
+    <!--Heading-->
+    <h1 class="heading-primary"> HORROR MOVIES<br>
+        <span> enjoy being hunted</span></h1>
+    <hr>
+    <div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn">≡ </button>
+        <div id="myDropdown" class="dropdown-content">
+            <a href="#t1">The invisible men</a>
+            <a href="#t2">Conjuring 3</a>
+            <a href="#t3">47 Meters down</a>
+            <a href="#t4">It...</a>
+            <a href="#t5">Happy deathday</a>
+        </div>
+    </div>
+    <hr>
+    <!--Pages-->
+
+    <!--Page 1-->
+    <div class="page page-1">
+        <h2 id="t1" class="heading-secondary">
+            ⫸ The invisible men</a>
         </h2>
-        <img src="https://raw.githubusercontent.com/Mohammed-Benotmane/gift-from-my-wife/master/hor2.jpg?token=AJO35IAJQXGS4T5OVQ5275K6XS5P4"/>
-        <p>Tree Gelbman is a self-absorbed school girl who wakes up on her birthday on the bed of a student named Carter. During the morning, Tree has the strange feeling that she has already experienced the events of the previous day. When a masked killer brutally kills her, she wakes up in Carter's dorm, unharmed. Now the frightened young woman has to relive the same day over and over again until she finds out who murdered her. 
-         </p> 
- <a class="trailer" href="https://youtu.be/wiPD9X43knU" target="_blank">Movie's trailer</a>
-     </div>  
-     
-    <!--Navigate Back N Forth--> 
-     <div class="button-box"> 
-        <button class="button-prev"> 
-            <i class="fa fa-arrow-left" aria-hidden="true"></i> PREV 
-        </button> 
-        <button class="button-next"> 
-            NEXT <i class="fa fa-arrow-right" aria-hidden="true"></i> 
-        </button> 
-    </div> 
- 
-    <!--horror Movies Link--> 
-    <div class="yt-link"> 
-        <a href="https://www.google.com/amp/s/www.thrillist.com/amphtml/entertainment/nation/best-horror-movies-2020" target="_blank"><b>Top horror movies 2020</b> </a> 
-    </div> 
-</body> 
+        <img
+            src="https://raw.githubusercontent.com/Mohammed-Benotmane/gift-from-my-wife/master/hor5.jpg?token=AJO35IG5GLFH33V3VBW2ACK6XS5QE" />
+
+        <p> Cecilia Kass is in a relationship with a brilliant and rich scientist. No longer tolerating her violent and
+            tyrannical behavior, she fled one night and took refuge with her sister, their childhood friend and her
+            teenage daughter. But when the man commits suicide by leaving Cecilia a large part of his immense fortune,
+            she begins to wonder if he is really dead ...</p>
+        <div class="trailer">
+            <a href="https://youtu.be/WO_FJdiY9dA" target="_blank">Movie's trailer</a>
+        </div>
+    </div>
+
+    <!--Page 2-->
+    <div class="page page-2">
+        <h2 id="t2" class="heading-secondary">
+            ⫸ Conjuring 3</a>
+        </h2>
+        <img
+            src="https://raw.githubusercontent.com/Mohammed-Benotmane/gift-from-my-wife/master/hor4.jpg?token=AJO35IBUEZOMIQCPCZGNVW26XS5QC" />
+        <p> A terrifying case of murder and a mysterious evil presence shakes even the paranormal investigators Ed and
+            Lorraine Warren, however very seasoned. In this case from their secret files, Ed and Lorrain start by
+            fighting to protect the soul of a little boy, then switch to a radically unknown world. It is the first time
+            in the history of the United States that a man suspected of murder has pleaded demonic possession as a line
+            of defense.
+        </p>
+        <div class="trailer">
+            <a href="https://youtu.be/eKYmp4FGy70" target="_blank">Movie's trailer</a>
+        </div>
+    </div>
+
+    <!--Page 3-->
+    <div class="page page-3">
+        <h2 id="t3" class="heading-secondary">
+            ⫸ 47 meters down </a>
+        </h2>
+        <img
+            src="https://raw.githubusercontent.com/Mohammed-Benotmane/gift-from-my-wife/master/hor3.jpg?token=AJO35IHWM6FJDLQPA55RZA26XS5QC" />
+        <p>A group of girls decides to go swimming near underwater ruins off the coast of Brazil. While they are amazed
+            by the beauty of the underwater landscape, the adventure quickly turns into a nightmare. Indeed, they
+            discover that they are not alone in these caves. At the bottom of the ocean, they will have to face the
+            deadliest species of sharks on the planet.</p>
+        <div class="trailer">
+            <a href="https://youtu.be/AvXjx8SZbv8" target="_blank">Movie's trailer</a>
+        </div>
+    </div>
+
+    <!--Page 4-->
+    <div class="page page-4">
+        <h2 id="t4" class="heading-secondary">
+            ⫸ It ...</a>
+        </h2>
+        <img
+            src="https://raw.githubusercontent.com/Mohammed-Benotmane/gift-from-my-wife/master/hor1.jpg?token=AJO35IABEYUBUCVBXHUPQR26XS5P2" />
+        <p>Every 27 years, an evil creature returns to haunt the streets of Derry, Maine. Almost thirty years after the
+            events of the first installment, the members of the Failed Club, now adults, meet again.
+        </p>
+        <div class="trailer">
+            <a href="https://youtu.be/zqUopiAYdRg" target="_blank">Movie's trailer</a>
+        </div>
+    </div>
+
+    <!--Page 5-->
+    <div class="page page-5">
+        <h2 id="t5" class="heading-secondary">
+            ⫸ Happy deathday</a>
+        </h2>
+        <img
+            src="https://raw.githubusercontent.com/Mohammed-Benotmane/gift-from-my-wife/master/hor2.jpg?token=AJO35IAJQXGS4T5OVQ5275K6XS5P4" />
+        <p>Tree Gelbman is a self-absorbed school girl who wakes up on her birthday on the bed of a student named
+            Carter. During the morning, Tree has the strange feeling that she has already experienced the events of the
+            previous day. When a masked killer brutally kills her, she wakes up in Carter's dorm, unharmed. Now the
+            frightened young woman has to relive the same day over and over again until she finds out who murdered her.
+        </p>
+        <div class="trailer">
+            <a href="https://youtu.be/wiPD9X43knU" target="_blank">Movie's trailer</a>
+        </div>
+    </div>
+
+    <!--Navigate Back N Forth-->
+    <div class="button-box">
+        <button class="button-prev">
+            <i class="fa fa-arrow-left" aria-hidden="true"></i> PREV
+        </button>
+        <button class="button-next">
+            NEXT <i class="fa fa-arrow-right" aria-hidden="true"></i>
+        </button>
+    </div>
+
+    <!--horror Movies Link-->
+    <div class="yt-link">
+        <a href="https://www.google.com/amp/s/www.thrillist.com/amphtml/entertainment/nation/best-horror-movies-2020"
+            target="_blank"><b>Top horror movies 2020</b> </a>
+    </div>
+</body>
+
 </html>
