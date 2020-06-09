@@ -1,165 +1,258 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-    <title>horror movies</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<!DOCTYPE html> 
+<html> 
+<head> 
+    <title>horror movies</title> 
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600|Work+Sans:400,500&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <script>
-        var i = 0;/*current page*/
-        var j = 5;/*total pages*/
-
-        $(document).ready(function () {
-            $(".button-next").click(function () {
-                $(".page-" + (i + 1)).hide();
-                i = (j + i + 1) % j;
-                $(".page-" + (i + 1)).show();
-            });
-            $(".button-prev").click(function () {
-                $(".page-" + (i + 1)).hide();
-                i = (j + i - 1) % j;
-                $(".page-" + (i + 1)).show();
-            });
-        });
-
-        function myFunction() {
-            document.getElementById("myDropdown").classList.toggle("show");
-        }
-
-        window.onclick = function (event) {
-            if (!event.target.matches('.dropbtn')) {
-                var dropdowns = document.getElementsByClassName("dropdown-content");
-                var i;
-                for (i = 0; i < dropdowns.length; i++) {
-                    var openDropdown = dropdowns[i];
-                    if (openDropdown.classList.contains('show')) {
-                        openDropdown.classList.remove('show');
-                    }
-                }
-            }
-        }
-    </script>
-</head>
-
-<body>
-    <!--Heading-->
-    <h1 class="heading-primary"> HORROR MOVIES<br>
-        <span> enjoy being hunted</span></h1>
-    <hr>
-    <div class="dropdown">
-        <button onclick="myFunction()" class="dropbtn">≡ </button>
-        <div id="myDropdown" class="dropdown-content">
-            <a href="#t1">The invisible men</a>
-            <a href="#t2">Conjuring 3</a>
-            <a href="#t3">47 Meters down</a>
-            <a href="#t4">It...</a>
-            <a href="#t5">Happy deathday</a>
+    <link href="https://fonts.googleapis.com/css?family=Sarabun" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600|Work+Sans:400,500&display=swap" rel="stylesheet"> 
+    
+</head> 
+<body> 
+    <!--Heading--> 
+    <h1 class="heading-primary"> HORROR <br>MOVIES & SERIES<br> 
+<span><marquee>enjoy being hunted</marquee></span></h1> 
+<hr>
+         <div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn"><i class="fa fa-bars">MENU</i></button>
+  <div id="myDropdown" class="dropdown-content">
+   <a href="index.html">Movies</a>
+    <a href="series.html">Series</a>
+  </div>
+</div>
+<hr>
+    <!--Pages--> 
+ 
+    <!--Page 1--> 
+    <div class="page page-1"> 
+        <h2 class="heading-secondary"> ⫸ <a href="https://youtu.be/WO_FJdiY9dA" target="_blank"> 
+        The invisible men</a> 
+         </h2> 
+         
+    <img src="image/invisible.jpg" alt="invisible"> 
+  
+         <p> Cecilia Kass is in a relationship with a brilliant and rich scientist. No longer tolerating her violent and tyrannical behavior, she fled one night and took refuge with her sister, their childhood friend and her teenage daughter. But when the man commits suicide by leaving Cecilia a large part of his immense fortune, she begins to wonder if he is really dead ...</p> 
+         
+         <div class="information">
+     <table border="1" bordercolor="#070742">
+    <tr>
+        <td><b>Release Year:</b></td>
+        <td>2020 </td>
+    </tr>
+    <tr>
+        <td><b>Time :</b></td>
+        <td>2h05min </td>
+    </tr>
+    <tr>
+        <td><b>Director:</b></td>
+        <td><a href="https://fr.m.wikipedia.org/wiki/Leigh_Whannell">Leigh Whannell</a></td>
+    </tr>
+    <tr>
+        <td><b>Budget:</b></td> 
+        <td>7 million USD</td>
+    </tr>
+    <tr>
+        <td><b>Stars:</b></td> 
+        <td><a href="https://fr.m.wikipedia.org/wiki/Elisabeth_Moss"> Elisabeth Moss </a>
+<a href="https://fr.m.wikipedia.org/wiki/Michael_Dorman"> Michael Dorman </a>
+<a href="https://fr.m.wikipedia.org/wiki/Oliver_Jackson-Cohen"> Oliver Jackson Cohen </a>
+<a href="https://fr.m.wikipedia.org/wiki/Aldis_Hodge"> Aldis Hidge </a>
+<a href="https://fr.m.wikipedia.org/wiki/Johnny_Depp"> Johnny Depp </a></td>
+        </tr>
+      </table>
+     </div>
+    </div> 
+           
+    <!--Page 2--> 
+    <div class="page page-2"> 
+        <h2 class="heading-secondary"> ⫸ <a href="https://youtu.be/eKYmp4FGy70" target="_blank"> Conjuring 3</a> 
+         </h2> 
+     <img src="image/conjuring.jpg" alt="conjuring"> 
+         <p> A terrifying case of murder and a mysterious evil presence shakes even the paranormal investigators Ed and Lorraine Warren, however very seasoned. In this case from their secret files, Ed and Lorrain start by fighting to protect the soul of a little boy, then switch to a radically unknown world. It is the first time in the history of the United States that a man suspected of murder has pleaded demonic possession as a line of defense.
+         </p> 
+         
+         <div class="information">
+    <table border="1" bordercolor="#070742">
+       <tr>
+         <td><b>Release Year:</b></td>
+         <td> 2020 </td>
+       </tr>
+       <tr>
+         <td><b>Time :</b></td>
+         <td>nh nmin </td>
+       </tr>
+       <tr>
+         <td><b>Director:</b></td> 
+         <td><a href="https://fr.m.wikipedia.org/wiki/Michael_Chaves"> Michael Chaves</a></td>
+       </tr>
+       <tr>
+         <td><b>Budget:</b></td> 
+         <td>20 million USD</td>
+       </tr>
+       <tr>
+         <td><b>Stars:</b></td> 
+         <td><a href="https://fr.m.wikipedia.org/wiki/Vera_Farmiga"> Vera Farmiga</a>
+<a href="https://fr.m.wikipedia.org/wiki/Patrick_Wilson">Patrick Wilson</a>
+<a href="https://en.m.wikipedia.org/wiki/Sterling_Jerins">Sterling Jerins</a>
+<a href="https://fr.m.wikipedia.org/wiki/Bonnie_Aarons">Bonnie Aarons</a>
+<a href="https://fr.m.wikipedia.org/wiki/Shannon_Kook-Chun">Shannom Kook-Chun</a></td>
+        </tr>
+    </table>
+          </div>
+    </div> 
+    
+    <!--Page 3--> 
+    <div class="page page-3"> 
+        <h2 class="heading-secondary"> ⫸ <a href="https://youtu.be/AvXjx8SZbv8" target="_blank">
+        47 meters down </a> 
+        </h2> 
+        
+      <img src="image/down.jpg" alt="down">  
+        <p>A group of girls decides to go swimming near underwater ruins off the coast of Brazil. While they are amazed by the beauty of the underwater landscape, the adventure quickly turns into a nightmare. Indeed, they discover that they are not alone in these caves. At the bottom of the ocean, they will have to face the deadliest species of sharks on the planet.</p> 
+        
+        <div class="information">
+    <table border="1" bordercolor="#070742">
+      <tr>
+        <td><b>Release Year:</b></td>
+        <td>2017 </td>
+      </tr>
+      <tr>
+        <td><b>Time :</b></td>
+        <td>1h29min </td>
+      </tr>
+      <tr>
+        <td><b>Director:</b></td>
+        <td><a href="https://fr.m.wikipedia.org/wiki/Johannes_Roberts">Johannes Roberts</a></td>
+      </tr>
+      <tr>
+        <td><b>Box-Office:</b></td> 
+        <td>62.6 million USD</td>
+      </tr>
+      <tr>
+        <td><b>Budget:</b></td> 
+        <td>5.3 million USD</td>
+      </tr>
+      <tr>
+        <td><b>Stars:</b></td> 
+        <td><a href="https://fr.m.wikipedia.org/wiki/Claire_Holt">Claire Holt</a>
+<a href="https://fr.m.wikipedia.org/wiki/Mandy_Moore">Mandy Moore</a>
+<a href="https://fr.m.wikipedia.org/wiki/Matthew_Modine">Matthew Modine</a>
+<a href="https://fr.m.wikipedia.org/wiki/Yani_Gellman">Yani Gellman</a>
+<a href="https://fr.qwe.wiki/wiki/Santiago_Segura_(American_actor)">Santiago Segura</a></td>
+      </tr>
+    </table>
+          </div>
+    </div> 
+    
+    <!--Page 4--> 
+    <div class="page page-4"> 
+        <h2 class="heading-secondary">  ⫸ <a href="https://youtu.be/zqUopiAYdRg" target="_blank">
+        It: Chapter II</a> 
+         </h2> 
+         
+    <img src="image/it.jpg" alt="it">
+    
+         <p>Every 27 years, an evil creature returns to haunt the streets of Derry, Maine. Almost thirty years after the events of the first installment, the members of the Failed Club, now adults, meet again.
+         </p> 
+         
+         <div class="information">
+    <table border="1" bordercolor="#070742">
+     <tr>
+       <td><b>Release Year:</b></td> 
+       <td>2019 </td>
+     </tr>
+     <tr>
+        <td><b>Time :</b></td>
+        <td>2h50min </td>
+     </tr>
+     <tr>
+        <td><b>Director:</b></td>
+        <td><a href="https://fr.m.wikipedia.org/wiki/Andrés_Muschietti">Andrés Muschietti</a></td>
+     </tr>
+     <tr>
+        <td><b>Box-Office:</b></td>
+        <td>473.1 million USD</td>
+     </tr>
+     <tr>
+        <td><b>Budget:</b></td>
+        <td>79 million USD</td>
+     </tr>
+     <tr>
+        <td><b>Stars:</b></td> 
+        <td><a href="https://fr.m.wikipedia.org/wiki/Jessica_Chastain">Jessica Chaptain</a>, 
+<a href="https://fr.m.wikipedia.org/wiki/Bill_Skarsgård">Bill Skarsgard</a>, 
+<a href="https://fr.m.wikipedia.org/wiki/Stephen_King">Stephen King</a>, <a href="https://fr.m.wikipedia.org/wiki/James_McAvoy">Janes McAvoy</a>, <a href="https://fr.m.wikipedia.org/wiki/Bill_Hader">Bill Hader</a>, 
+<a href="https://fr.m.wikipedia.org/wiki/Jay_Ryan">Jay Ryan</a>, 
+<a href="https://fr.m.wikipedia.org/wiki/Sophia_Lillis">Sofia Lillis</a>.</td>
+      </tr>
+        </table>
         </div>
-    </div>
-    <hr>
-    <!--Pages-->
+    </div> 
+    
+    <!--Page 5--> 
+    <div class="page page-5"> 
+        <h2 class="heading-secondary">  ⫸<a href="https://youtu.be/wiPD9X43knU" target="_blank">
+        Happy deathday II</a> 
+        </h2> 
+        
+    <img src="image/death.jpg" alt="death">
+    
+        <p>Tree Gelbman is a self-absorbed school girl who wakes up on her birthday on the bed of a student named Carter. During the morning, Tree has the strange feeling that she has already experienced the events of the previous day. When a masked killer brutally kills her, she wakes up in Carter's dorm, unharmed. Now the frightened young woman has to relive the same day over and over again until she finds out who murdered her. 
+         </p> 
+    
+         <div class="information">
+     <table border="1" bordercolor="#070742">
+     <tr>
+        <td><b>Release Year:</b></td>
+        <td> 2019</td>
+     </tr>
+     <tr>
+        <td><b>Time :</b></td>
+        <td> 1h40min </td>
+     </tr>  
+     <tr>
+        <td><b>Director:</b></td>
+        <td> <a href="https://fr.m.wikipedia.org/wiki/Christopher_Landon_(réalisateur)">Christopher Landon</a></td>
+      </tr>
+      <tr>
+        <td><b>Box-Office:</b></td> 
+        <td> 64.5 million USD</td>
+      </tr>
+      <tr>
+        <td><b>Budget:</b></td>
+        <td>9 million USD</td>
+      </tr>
+      <tr>
+        <td><b>Stars:</b></td> 
+        <td><a href="https://fr.m.wikipedia.org/wiki/Jessica_Rothe">Jessica Rothe</a>
+<a href="https://fr.m.wikipedia.org/wiki/Israel_Broussard">Israel Broussard</a>
+<a href="https://fr.m.wikipedia.org/wiki/Rachel_Matthews">Rachel Matthews</a>
+<a href="https://fr.m.wikipedia.org/wiki/Suraj_Sharma">Suraj Sharma</a>
+<a href="https://m.wikidata.org/wiki/Q66311045">Sarah Yarkin</a></td>
+            </tr>
+        </table>
+       </div>
+     </div>  
+     
+    <!--Navigate Back N Forth--> 
+     <div class="button-box"> 
+        <button class="button-prev"> 
+            <i class="fa fa-arrow-left" aria-hidden="true"></i> PREV 
+        </button> 
+        <button class="button-next"> 
+            NEXT <i class="fa fa-arrow-right" aria-hidden="true"></i> 
+        </button> 
+    </div> 
+ 
+    <!--horror Movies Link--> 
+    <div class="yt-link"> 
+      <a href="https://www.google.com/amp/s/www.thrillist.com/amphtml/entertainment/nation/best-horror-movies-2020" target="_blank"><b>Top horror movies 2020</b> </a> 
+    </div> 
 
-    <!--Page 1-->
-    <div class="page page-1">
-        <h2 id="t1" class="heading-secondary">
-            ⫸ The invisible men</a>
-        </h2>
-        <img
-            src="https://raw.githubusercontent.com/Mohammed-Benotmane/gift-from-my-wife/master/hor5.jpg?token=AJO35IG5GLFH33V3VBW2ACK6XS5QE" />
-
-        <p> Cecilia Kass is in a relationship with a brilliant and rich scientist. No longer tolerating her violent and
-            tyrannical behavior, she fled one night and took refuge with her sister, their childhood friend and her
-            teenage daughter. But when the man commits suicide by leaving Cecilia a large part of his immense fortune,
-            she begins to wonder if he is really dead ...</p>
-        <div class="trailer">
-            <a href="https://youtu.be/WO_FJdiY9dA" target="_blank">Movie's trailer</a>
-        </div>
-    </div>
-
-    <!--Page 2-->
-    <div class="page page-2">
-        <h2 id="t2" class="heading-secondary">
-            ⫸ Conjuring 3</a>
-        </h2>
-        <img
-            src="https://raw.githubusercontent.com/Mohammed-Benotmane/gift-from-my-wife/master/hor4.jpg?token=AJO35IBUEZOMIQCPCZGNVW26XS5QC" />
-        <p> A terrifying case of murder and a mysterious evil presence shakes even the paranormal investigators Ed and
-            Lorraine Warren, however very seasoned. In this case from their secret files, Ed and Lorrain start by
-            fighting to protect the soul of a little boy, then switch to a radically unknown world. It is the first time
-            in the history of the United States that a man suspected of murder has pleaded demonic possession as a line
-            of defense.
-        </p>
-        <div class="trailer">
-            <a href="https://youtu.be/eKYmp4FGy70" target="_blank">Movie's trailer</a>
-        </div>
-    </div>
-
-    <!--Page 3-->
-    <div class="page page-3">
-        <h2 id="t3" class="heading-secondary">
-            ⫸ 47 meters down </a>
-        </h2>
-        <img
-            src="https://raw.githubusercontent.com/Mohammed-Benotmane/gift-from-my-wife/master/hor3.jpg?token=AJO35IHWM6FJDLQPA55RZA26XS5QC" />
-        <p>A group of girls decides to go swimming near underwater ruins off the coast of Brazil. While they are amazed
-            by the beauty of the underwater landscape, the adventure quickly turns into a nightmare. Indeed, they
-            discover that they are not alone in these caves. At the bottom of the ocean, they will have to face the
-            deadliest species of sharks on the planet.</p>
-        <div class="trailer">
-            <a href="https://youtu.be/AvXjx8SZbv8" target="_blank">Movie's trailer</a>
-        </div>
-    </div>
-
-    <!--Page 4-->
-    <div class="page page-4">
-        <h2 id="t4" class="heading-secondary">
-            ⫸ It ...</a>
-        </h2>
-        <img
-            src="https://raw.githubusercontent.com/Mohammed-Benotmane/gift-from-my-wife/master/hor1.jpg?token=AJO35IABEYUBUCVBXHUPQR26XS5P2" />
-        <p>Every 27 years, an evil creature returns to haunt the streets of Derry, Maine. Almost thirty years after the
-            events of the first installment, the members of the Failed Club, now adults, meet again.
-        </p>
-        <div class="trailer">
-            <a href="https://youtu.be/zqUopiAYdRg" target="_blank">Movie's trailer</a>
-        </div>
-    </div>
-
-    <!--Page 5-->
-    <div class="page page-5">
-        <h2 id="t5" class="heading-secondary">
-            ⫸ Happy deathday</a>
-        </h2>
-        <img
-            src="https://raw.githubusercontent.com/Mohammed-Benotmane/gift-from-my-wife/master/hor2.jpg?token=AJO35IAJQXGS4T5OVQ5275K6XS5P4" />
-        <p>Tree Gelbman is a self-absorbed school girl who wakes up on her birthday on the bed of a student named
-            Carter. During the morning, Tree has the strange feeling that she has already experienced the events of the
-            previous day. When a masked killer brutally kills her, she wakes up in Carter's dorm, unharmed. Now the
-            frightened young woman has to relive the same day over and over again until she finds out who murdered her.
-        </p>
-        <div class="trailer">
-            <a href="https://youtu.be/wiPD9X43knU" target="_blank">Movie's trailer</a>
-        </div>
-    </div>
-
-    <!--Navigate Back N Forth-->
-    <div class="button-box">
-        <button class="button-prev">
-            <i class="fa fa-arrow-left" aria-hidden="true"></i> PREV
-        </button>
-        <button class="button-next">
-            NEXT <i class="fa fa-arrow-right" aria-hidden="true"></i>
-        </button>
-    </div>
-
-    <!--horror Movies Link-->
-    <div class="yt-link">
-        <a href="https://www.google.com/amp/s/www.thrillist.com/amphtml/entertainment/nation/best-horror-movies-2020"
-            target="_blank"><b>Top horror movies 2020</b> </a>
-    </div>
-</body>
-
+    <script src="js.js"></script>
+</body> 
 </html>
